@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sarasee Kiran</title>
+<meta name="description" content="Sarasee Kiran. Growth Strategy, Art Direction, Design. New York.">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<main class="home">
+  <div class="left">
+    <h1 class="big">Sarasee<br>Kiran</h1>
+    <nav>
+      <a href="strategy/">Strategy</a>
+      <a href="art-direction/">Art Direction</a>
+      <a href="design/">Design</a>
+      <a href="about/">About</a>
+    </nav>
+    <div class="socials">
+      <a href="https://instagram.com/sarcratic">Instagram</a>
+      <a href="mailto:saraseekiran@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/saraseekiran/">LinkedIn</a>
+      <a href="https://sarcratic.substack.com">Substack</a>
+    </div>
+  </div>
+  <div class="right"><div class="slot" id="slot"><img src="assets/record-2-vinyl.jpg" alt="Record series, cyan label, rendered" class="on"><img src="assets/record-1-vinyl.jpg" alt="Record series, pale blue label, rendered"><img src="assets/sarcratic-issue-one-mockup.jpg" alt="Sarcratic Issue One, rendered"><img src="assets/before-the-world-blows.jpg" alt="Before the World Blows"><img src="assets/dizzy-gillespie.jpg" alt="Dizzy Gillespie, concept cover"><video src="assets/eadem-film.mp4" muted playsinline preload="auto" aria-label="Eadem x Tyla, film"></video><img src="assets/record-4-flat.jpg" alt="Record series, eyeball label"><img src="assets/icon.jpg" alt="ICON remix artwork"></div></div>
+</main>
+<script>
+(function(){
+  var items=[].slice.call(document.querySelectorAll('#slot > *')),i=0,t;
+  var HOLD=2000;
+  function show(n){
+    items.forEach(function(el,k){
+      el.classList.toggle('on',k===n);
+      if(el.tagName==='VIDEO'){ if(k===n){el.currentTime=0;el.play().catch(function(){});} else {el.pause();} }
+    });
+  }
+  function next(){
+    i=(i+1)%items.length; show(i);
+    var el=items[i];
+    var hold=(el.tagName==='VIDEO' && el.duration && isFinite(el.duration)) ? Math.max(el.duration*1000,HOLD) : HOLD;
+    t=setTimeout(next,hold);
+  }
+  show(0); t=setTimeout(next,HOLD);
+})();
+</script>
+</body></html>
