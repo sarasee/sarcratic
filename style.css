@@ -1,7 +1,9 @@
 :root{--ink:#000;--paper:#fff;--rule:#000;--gap:18px;--pad:24px}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:17px;line-height:1.45;padding:0 var(--pad) 80px}
+:root{--sans:"Helvetica Neue",Helvetica,Arial,sans-serif;--serif:"Times New Roman",Times,"Liberation Serif",serif}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.45;padding:0 var(--pad) 80px}
+.top .name,.top nav a,h1.practice,.label,.credit,.home .big,.home nav a,.about .id,.about .k{font-family:var(--sans)}
 a{color:inherit;text-decoration:none}
 a:hover{text-decoration:underline}
 .top{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px 24px;padding:22px 0 10px;border-bottom:1px solid var(--rule);margin-bottom:28px}
