@@ -38,6 +38,8 @@ h1.practice{font-size:14px;letter-spacing:.12em;text-transform:uppercase;font-we
 .home .slot img,.home .slot video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;transition:opacity .35s}
 .home .slot .on{opacity:1}
 /* about */
+.aboutwrap{display:grid;grid-template-columns:minmax(0,62ch) minmax(280px,1fr);gap:48px;align-items:start;max-width:1400px}
+.aboutwrap .portrait img{display:block;width:100%;height:auto}
 .about{max-width:62ch;padding-top:6px}
 .about p{margin:0 0 18px}
 .about .k{font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin:34px 0 8px}
@@ -54,4 +56,5 @@ h1.practice{font-size:14px;letter-spacing:.12em;text-transform:uppercase;font-we
   .row.four{flex-direction:row;flex-wrap:wrap}
   .row.four .f{flex:0 0 calc(50% - var(--gap)/2)}
   .project{margin-bottom:64px}
+  .aboutwrap{grid-template-columns:1fr;gap:28px}
 }
