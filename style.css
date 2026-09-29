@@ -23,6 +23,7 @@ h1.practice{font-size:14px;letter-spacing:.12em;text-transform:uppercase;font-we
 .row img,.row video{display:block;width:100%;height:auto}
 .single{margin:0 0 var(--gap)}
 .single img,.single video{display:block;width:100%;height:auto}
+.single.half{max-width:calc(50% - var(--gap)/2)}
 .row.four .f{flex:1 1 0}
 .row .spread{display:flex;gap:2px}
 .row .spread img{width:50%}
@@ -58,5 +59,6 @@ h1.practice{font-size:14px;letter-spacing:.12em;text-transform:uppercase;font-we
   .row.four{flex-direction:row;flex-wrap:wrap}
   .row.four .f{flex:0 0 calc(50% - var(--gap)/2)}
   .project{margin-bottom:64px}
+  .single.half{max-width:100%}
   .aboutwrap{grid-template-columns:1fr;gap:28px}
 }
