@@ -1,6 +1,6 @@
 @font-face{font-family:"DM Mono";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/dm-mono-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 
-:root{--ink:#000;--paper:#fff;--blue:#0000ff;--gap:18px;--pad:24px;
+:root{--ink:#000;--paper:#fff;--blue:#0000ff;--gap:18px;--pad:24px;--maxh:calc(100vh - 120px);
 --heavy:"Helvetica Neue",Helvetica,Arial,sans-serif;--mono:"DM Mono",ui-monospace,Menlo,monospace;
 --c-name:#cec7b8;--c-design:#1ff8f8;--c-ad:#871fdf;--c-strategy:#ff00fe;--c-about:#d11414}
 *{box-sizing:border-box}
@@ -21,14 +21,14 @@ h1.practice{font-size:clamp(44px,5.4vw,92px);line-height:.95;letter-spacing:-.02
 .title{font-size:clamp(28px,2.8vw,44px);line-height:1;letter-spacing:-.02em;margin:0 0 14px;font-weight:700}
 .title .lab{display:inline-block;max-width:100%;margin-left:.35em;vertical-align:baseline}
 .title .lab::before{content:"("}.title .lab::after{content:")"}
-.line{font-size:clamp(20px,1.6vw,26px);line-height:1.12;max-width:52ch;margin:0 0 24px}
-.case p{font-size:clamp(20px,1.6vw,26px);line-height:1.12;max-width:52ch;margin:0 0 16px}
-.credit{max-width:110ch;margin:14px 0 0}
+.line{font-size:clamp(17px,1.3vw,21px);line-height:1.15;max-width:none;margin:0 0 22px}
+.case p{font-size:clamp(17px,1.3vw,21px);line-height:1.15;max-width:none;margin:0 0 14px}
+.credit{max-width:none;margin:14px 0 0}
 .row{display:flex;gap:var(--gap);align-items:flex-start;margin:0 0 var(--gap)}
 .row .f{min-width:0}
 .row img,.row video{display:block;width:100%;height:auto}
 .single{margin:0 0 var(--gap)}
-.single img,.single video{display:block;width:100%;height:auto}
+.single img,.single video{display:block;width:auto;height:auto;max-width:100%;max-height:var(--maxh)}
 .single.half{max-width:calc(50% - var(--gap)/2)}
 .row.four .f{flex:1 1 0}
 .row .spread{display:flex;gap:2px}
@@ -51,7 +51,9 @@ h1.practice{font-size:clamp(44px,5.4vw,92px);line-height:.95;letter-spacing:-.02
 .pile .rot img.on{opacity:1}
 /* about */
 .aboutbig{max-width:1400px}
-.aboutbig p{font-size:clamp(30px,5.4vw,92px);line-height:1;letter-spacing:-.025em;margin:0 0 .55em}
+.aboutbig p{font-size:min(2.6vw,4.6vh);line-height:1;letter-spacing:-.02em;margin:0 0 .5em}
+body.aboutpage{padding-bottom:24px}
+body.aboutpage .top{margin-bottom:36px}
 .aboutbig p.k{margin:0 0 6px;font-size:12px;line-height:1.4;letter-spacing:0}
 .aboutbig a{color:var(--blue);overflow-wrap:anywhere}
 .aboutbig .note{margin-left:.35em}
@@ -82,4 +84,5 @@ h1.practice{font-size:clamp(44px,5.4vw,92px);line-height:.95;letter-spacing:-.02
   .duo{display:block;max-width:none!important}
   .duo>.project{display:block;margin:0 0 72px}
   .duo .line:empty{display:none}
+  .aboutbig p{font-size:7.5vw}
 }
