@@ -30,7 +30,7 @@ h1.practice{font-size:clamp(44px,5.4vw,92px);line-height:.95;letter-spacing:-.02
 .single{margin:0 0 var(--gap)}
 .single img,.single video{display:block;width:auto;height:auto;max-width:min(100%,1400px);max-height:var(--maxh)}
 .row.c{margin-left:auto;margin-right:auto}
-.row.wide{--gap:56px;margin-bottom:18px}
+.row.wide{--gap:112px;margin-bottom:18px}
 .single.c img,.single.c video{margin-left:auto;margin-right:auto}
 .single.half{max-width:calc(50% - var(--gap)/2)}
 .row.four{max-width:1400px}
