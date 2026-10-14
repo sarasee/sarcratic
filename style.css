@@ -17,7 +17,7 @@ a:hover{text-decoration:underline;text-decoration-thickness:.08em;text-underline
 .top nav{display:flex;gap:6px 12px;flex-wrap:wrap}
 .top nav a.here{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:4px}
 h1.practice{font-size:clamp(44px,5.4vw,92px);line-height:.95;letter-spacing:-.02em;margin:0 0 64px;font-weight:700}
-.project{margin:0 0 110px;max-width:1400px}
+.project{margin:0 0 110px}
 .title{font-size:clamp(28px,2.8vw,44px);line-height:1;letter-spacing:-.02em;margin:0 0 14px;font-weight:700}
 .title .lab{display:inline-block;max-width:100%;margin-left:.35em;vertical-align:baseline}
 .title .lab::before{content:"("}.title .lab::after{content:")"}
@@ -28,8 +28,11 @@ h1.practice{font-size:clamp(44px,5.4vw,92px);line-height:.95;letter-spacing:-.02
 .row .f{min-width:0}
 .row img,.row video{display:block;width:100%;height:auto}
 .single{margin:0 0 var(--gap)}
-.single img,.single video{display:block;width:auto;height:auto;max-width:100%;max-height:var(--maxh)}
+.single img,.single video{display:block;width:auto;height:auto;max-width:min(100%,1400px);max-height:var(--maxh)}
+.row.c{margin-left:auto;margin-right:auto}
+.single.c img,.single.c video{margin-left:auto;margin-right:auto}
 .single.half{max-width:calc(50% - var(--gap)/2)}
+.row.four{max-width:1400px}
 .row.four .f{flex:1 1 0}
 .row .spread{display:flex;gap:2px}
 .row .spread img{width:50%}
