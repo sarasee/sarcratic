@@ -10,12 +10,12 @@ a{color:inherit;text-decoration:none}
 a:hover{text-decoration:underline;text-decoration-thickness:.08em;text-underline-offset:.1em}
 .note{font-family:var(--mono);font-weight:400;font-size:12px;line-height:1.4;letter-spacing:0;color:var(--blue)}
 .blk{-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:0 .04em}
-.c-name{background:var(--c-name)}.c-design{background:var(--c-design)}.c-ad{background:var(--c-ad);color:#fff}.c-strategy{background:var(--c-strategy)}.c-about{background:var(--c-about)}
+.c-name{background:var(--c-name)}.c-design{background:var(--c-design)}.c-ad{background:var(--c-ad);color:#fff}.c-strategy{background:var(--c-strategy)}.c-about{background:var(--c-about);color:#fff}
 .top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:10px 24px;padding:18px 0 0;margin-bottom:64px}
 .top .name,.top nav a{font-size:26px;line-height:1;letter-spacing:-.02em}
 .top .name,.home .big{text-transform:uppercase}
 .top nav{display:flex;gap:6px 12px;flex-wrap:wrap}
-.top nav a.here{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:4px}
+.top nav a.here{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:4px;text-decoration-color:#000}
 h1.practice{font-size:clamp(44px,5.4vw,92px);line-height:.95;letter-spacing:-.02em;margin:0 0 64px;font-weight:700}
 .project{margin:0 0 110px}
 .title{font-size:clamp(28px,2.8vw,44px);line-height:1;letter-spacing:-.02em;margin:0 0 14px;font-weight:700}
