@@ -89,9 +89,8 @@ body.aboutpage .top{margin-bottom:36px}
   .duo{display:block;max-width:none!important}
   .duo>.project{display:block;margin:0 0 72px}
   .duo .line:empty{display:none}
-  .duo.keep{display:grid;column-gap:12px;max-width:none!important;margin:0 0 72px}
-  .duo.keep>.project{display:grid;margin:0}
-  .duo.keep .title{font-size:20px}
+  .row.keep{flex-direction:row;--gap:12px}
+  .row.keep .f{flex:1 1 0!important;width:auto}
   .aboutbig p{font-size:7.5vw}
   .row.wide{--gap:28px}
   .pile .kh{left:2%;top:80%;width:24%}
