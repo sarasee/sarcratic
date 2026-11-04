@@ -96,3 +96,9 @@ body.aboutpage .top{margin-bottom:36px}
   .pile .kh{left:2%;top:80%;width:24%}
   .pile{margin-bottom:16%}
 }
+.alt{display:grid;align-items:center;margin:0 auto var(--gap)}
+.alt>.row{grid-area:1/1;margin:0;width:100%;max-width:none}
+.alt>.b{animation:altfade 6s infinite}
+@keyframes altfade{0%,42%{opacity:0}50%,92%{opacity:1}100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.alt>.b{animation:none;opacity:0}}
+@media (max-width:820px){.alt>.row{flex-direction:row;--gap:8px}.alt>.row .f{flex:var(--fx,1) 1 0!important;width:auto!important}}
